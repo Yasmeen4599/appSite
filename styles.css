@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-size: 3vh;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #F7F5F2;
+}
+
+/* Navbar */
+
+.container h1, h2, p{
+    color: #F7F5F2;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#56567b, #8D8DAA);
+    overflow: hidden;
+}
+.row{
+    padding: 7vh 6em;
+}
+.navbar{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .nav-header{
+    display: inline;
+}
+.navbar .nav-header .nav-logo{
+    width: 30%;
+}
+.navbar .nav-links{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar .nav-links a{
+    color: #DFDFDE;
+    padding: 0 3%;
+}
+.navbar .nav-links a:hover{
+    color: #F56D91;
+}
+.navbar .nav-links a.active{
+    color: #F56D91;
+}
+.navbar #nav-check, .navbar .nav-btn{
+    display: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #77779c;
+    z-index: 1;
+    padding: 1vh 6em;
+}  
+.sticky + .main {
+    padding-top: 60px;
+}
+
+/* Main Section */
+
+.main{
+    display: flex;
+}
+.left{
+    width: 50%;
+    margin: auto;
+}
+.left h1, p{
+    margin-bottom: 30px;
+}
+button{
+    color: #666692;
+    padding: 3% 6%;
+    border-radius: 5px;
+    border: 2px #F56D91 solid;
+}
+button:hover{
+    color: #F56D91;
+    cursor: pointer;
+}
+.right{
+    width: 50%;
+    margin-top: 12px;
+}
+.right img{
+    height: 100%;
+    margin-left: 20%;
+}
+
+/* Features Section */
+
+.title h1{
+    padding-top: 50px;
+    text-align: center;
+}
+.features{
+    background-color: #DFDFDE;
+}
+.features p, h4, .about p, h1{
+    color: #666692;    
+}
+.features img{
+    width: 70px;
+    height: 70px;
+}
+.feature-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.f1{
+    flex-basis: 25%;
+    text-align: center;
+    padding-top: 2%;
+}
+.f1 h4 {
+    margin: 15px 0px;
+}
+.f1:hover{
+    box-shadow: 4px 3px 8px 1px #F56D91;
+    transition-duration: 0.3s;
+    transform: rotate(3deg);
+    border-radius: 10px;
+}
+
+/* About Section */
+
+.about{
+    background-color: #F7F5F2;
+}
+.about .right img{
+    margin: auto;
+    height: 60vh;
+    filter: drop-shadow(15px 10px 10px rgba(201, 201, 201, 0.782));
+}
+.about .left{
+    margin-left: 150px;
+}
+
+/* Footer Section */
+
+.foot{
+    width: 100%;
+    background-color: #F56D91;
+    display: flex;
+}
+.foot div{
+    text-align: center;
+}
+.foot p, h3{
+    color: #F7F5F2;
+    margin-bottom: 20px;
+}
+.foot li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.col-2{
+    flex-grow: 2;
+}
+form input{
+    width: 50%;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #F7F5F2;
+    color: #F7F5F2;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+form button:hover{
+    color: #56567b;
+}
+.copyright{
+    background-color: #e44f77;
+    text-align: right;
+    padding: 0.5em 6em;
+}
+.social{
+    font-size: 25px;
+}
+.social i{
+    margin: 0 5% 0 0;
+    color: #DFDFDE;
+    cursor: pointer ;
+}
+
+@media only screen and (max-width:900px){
+    .row{
+        padding: 1em 2em;
+    }
+
+    .container img{
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .main, .feature-row {
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .main .right{
+        width: 100%;
+        margin: 10% 0 0 15%;
+    }
+
+    .about{
+        padding: 10%;
+    }
+    .about .right, .about .left{
+        margin: auto;
+    } 
+    .about .right img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    .features{
+        padding: 5%;
+    }
+    .f1{
+        margin-bottom: 5%;
+    }
+
+    .foot{
+        display: flex;
+        flex-direction: column;
+        padding: 10% 8%;
+    }
+    .col-1, .col-2, .col-3{
+        border-style: none;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .copyright{
+        text-align: center;
+        padding: 0.5em 2em;
+    } 
+
+    .navbar .space{
+        position: absolute;
+    }
+    .navbar .nav-btn{
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #F56D91;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+        background-color: #DFDFDE;
+    }
+    .navbar .nav-links{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        background-color: rgb(144, 144, 144);
+        transition: 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        right: 0;
+        border-radius: 50px 0 0 0;
+    }
+    .navbar .nav-links a {
+        display: block;
+        padding: 10% 0;
+    }
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: hidden;
+    }
+
+    .sticky {
+        top: 0px;
+        right: 0px;
+        padding: 2vh 2em;
+    }  
+    .sticky + .main {
+        padding-top: 60px;
+    }
+
+}
+
+@media (min-width:901px) and (max-width:1400px){
+    .logo{
+        width: 30%;
+    }
+    .menu{
+        width: 70%;
+    }
+    .about .right{
+        width: 60%;
+    }
+    .about .left{
+        width: 40%;
+    }
+    .about .right img{
+        width: 100%;
+        height: 100%;
+    }
+}
