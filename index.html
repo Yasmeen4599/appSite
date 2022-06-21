@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <title>appSite | A Ground-Breaking Business App and Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="hhhg.png" />
+    <script
+      src="https://kit.fontawesome.com/24b5629148.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="container row">
+      <div class="navbar" id="navbar">
+        <div class="nav-header">
+          <div class="nav-logo">
+            <a href="#">
+              <h1>appSite</h1>
+            </a>
+          </div>
+        </div>
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+          <a class="active" href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Project</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <article class="main">
+        <div class="left">
+          <h1>It's All About <br />Promoting Your Business.</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur officiis sapiente, consectetur fugit id.
+          </p>
+          <button>Know More</button>
+        </div>
+        <div class="right">
+          <img src="hhhg.png" />
+        </div>
+      </article>
+    </header>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <section class="features" id="features">
+      <div class="title">
+        <h1>OUR FEATURES</h1>
+      </div>
+      <div class="feature-row row">
+        <div class="f1">
+          <img src="easy-installation.png" alt="" />
+          <h4>EASY TO USE</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauantium,
+            blanditiis.
+          </p>
+        </div>
+        <div class="f1">
+          <img src="responsive.png" alt="" />
+          <h4>AWESOME DESIGN</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauantium,
+            blanditiis.
+          </p>
+        </div>
+        <div class="f1">
+          <img src="customization.png" alt="" />
+          <h4>EASY CUSTOMIZATION</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauantium,
+            blanditiis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main about row" id="about">
+      <div class="right">
+        <img src="onli.png" style="margin-bottom: 15px" />
+      </div>
+      <div class="left">
+        <h1>How It Works</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+          officiis sapiente, consectetur fugit id.
+        </p>
+        <button>Know More</button>
+      </div>
+    </section>
+
+    <footer class="foot row" id="foot">
+      <div class="col-1">
+        <h3>OUR COMPANY</h3>
+        <ul type="square">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Work Team</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Management</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form action="">
+          <input type="text" placeholder="Your Email Address" required /><br />
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>ADDRESS</h3>
+        <p>
+          17-8-533/204, Bagh-e-Jahan ara<br />
+          Hyderabad, Telangana 500023
+        </p>
+        <p>
+          Telephone: 040-535637388<br />
+          E-mail: yasmeenfatima16@gmail.com
+        </p>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+
+    <section class="cpy">
+      <div class="copyright">
+        <p style="padding-top: 1.2em">appSite, Copyright &copy; 2022</p>
+      </div>
+    </section>
+  </body>
+</html>
